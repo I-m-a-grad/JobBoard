@@ -2,11 +2,27 @@ import React from "react";
 
 function App() {
     return (
-        <div>
+        <>
             <h1>Job Board</h1>
-        </div>
+        </>
     );
 }
+
+const person = {
+    name: "Moshe",
+    age: 26,
+    // skills: {
+    //     react: "blah",
+    // },
+};
+
+console.log(
+    person.name +
+        " is " +
+        person.age +
+        " and has the following skills " +
+        person.skills?.react
+);
 
 let age = 0;
 console.log(age ?? "no age given");
