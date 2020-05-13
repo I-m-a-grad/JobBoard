@@ -1,31 +1,13 @@
 import React from "react";
+import Provider from "react-redux";
+import { store } from "../redux";
 
 function App() {
     return (
-        <>
+        <Provider store={store}>
             <h1>Job Board</h1>
-        </>
+        </Provider>
     );
 }
-
-const person = {
-    name: "Moshe",
-    age: 26,
-    // skills: {
-    //     react: "blah",
-    // },
-};
-
-console.log(
-    person.name +
-        " is " +
-        person.age +
-        " and has the following skills " +
-        person.skills?.react
-);
-
-let age = 0;
-console.log(age ?? "no age given");
-console.log(5n + 3n);
 
 export default App;
