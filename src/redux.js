@@ -7,7 +7,7 @@ import axios from "./axios-config";
 const test = async () => {
     try {
         const data = await axios.get("api");
-        console.log(data);
+        console.log("data", data);
         return data;
     } catch (error) {
         console.error(error);
@@ -15,6 +15,7 @@ const test = async () => {
 };
 
 console.log(test());
+// test();
 
 const reducer = (state = { jobSeekers: [] }, { type, payload }) => {
     switch (type) {
