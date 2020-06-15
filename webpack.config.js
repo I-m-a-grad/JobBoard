@@ -23,4 +23,12 @@ module.exports = {
             template: "./src/index.html",
         }),
     ],
+    devServer: {
+        proxy: {
+            "/api": {
+                target: "http://localhost:8000",
+                pathRewrite: { "^/api": "" },
+            },
+        },
+    },
 };
