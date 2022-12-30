@@ -40,7 +40,7 @@
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-16": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
-    "mocha": "^6.0.2",
+    "mocha": "^10.2.0",
     "sinon": "^1.17.6",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
